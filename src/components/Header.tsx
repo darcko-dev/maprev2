@@ -22,7 +22,8 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="MAPRE Logo" width={120} height={120} className="rounded-full" />
+            <Image src="/logo.png" alt="MAPRE Logo" width={40} height={40} className="rounded-full" />
+            <span className={`text-2xl font-bold ${isScrolled ? 'text-white' : 'text-neutral-100'}`}>MAPRE</span>
           </Link>
           <div className="hidden md:flex space-x-6">
             {['Inicio', 'Servicios', 'Nosotros', 'Proyectos', 'Contacto'].map((item) => (
